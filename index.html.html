@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="IceCream" />
+    <meta
+      name="keywords"
+      content="icecream, ice, gelato, nutella, fresh IceCream"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,100;9..40,200;9..40,300;9..40,400;9..40,500;9..40,600;9..40,700;9..40,800;9..40,900&family=Titan+One&display=swap"
+      rel="stylesheet"
+    />
+    <title>IceCream</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./sass/styles.css" />
+  </head>
+  <body>
+    <!-- Business Locations -->
+    <section class="business-locations">
+      <h2 class="visually-hidden">NU ESTE UN TITLU!</h2>
+      <ul class="locations-cards list">
+        <li class="cards-items">
+          <div class="cards-container">
+            <p class="locations-main-title">CAFE</p>
+            <div class="city-content">
+              <p class="city-title">Chicago</p>
+              <p class="city-description">
+                Handcrafted coffee, baked goods, and premium ice cream.
+              </p>
+            </div>
+            <div class="schedule-container">
+              <div class="schedule-content-f-m">
+                <p class="schedule-days">Monday - Friday</p>
+                <span class="schedule-hours">06:00 AM - 10:00 PM</span>
+              </div>
+              <div class="schedule-content-s-s">
+                <p class="schedule-days">Saturday - Sunday</p>
+                <span class="schedule-hours">08:00 AM - 16:00 PM</span>
+              </div>
+            </div>
+            <div class="contacts-content">
+              <a class="contact link" href="+61(0) 383 766 284"
+                >+61(0) 383 766 284</a
+              >
+              <a class="contact link" href="noreply@envato.com"
+                >noreply@envato.com</a
+              >
+            </div>
+          </div>
+        </li>
+        <li class="cards-items">
+          <div class="cards-container">
+            <p class="locations-main-title locations-secondary-title">
+              FOOD TRUCK
+            </p>
+            <div class="city-content">
+              <p class="city-title">Los Angeles</p>
+              <p class="city-description">
+                Fusion cuisine and refreshing ice cream made with passion.
+              </p>
+            </div>
+            <div class="schedule-container">
+              <div class="schedule-content-f-m">
+                <p class="schedule-days">Monday - Friday</p>
+                <span class="schedule-hours">06:00 AM - 10:00 PM</span>
+              </div>
+              <div class="schedule-content-s-s">
+                <p class="schedule-days">Saturday - Sunday</p>
+                <span class="schedule-hours">08:00 AM - 16:00 PM</span>
+              </div>
+            </div>
+            <div class="contacts-content">
+              <a class="contact link" href="+61(0) 383 766 284"
+                >+61(0) 383 766 284</a
+              >
+              <a class="contact link" href="noreply@envato.com"
+                >noreply@envato.com</a
+              >
+            </div>
+          </div>
+        </li>
+        <li class="cards-items">
+          <div class="cards-container">
+            <p class="locations-main-title">CAFE</p>
+            <div class="city-content">
+              <p class="city-title">New York</p>
+              <p class="city-description">
+                Specialty teas, artisanal pastries, mouth-watering ice cream.
+              </p>
+            </div>
+            <div class="schedule-container">
+              <div class="schedule-content-f-m">
+                <p class="schedule-days">Monday - Friday</p>
+                <span class="schedule-hours">06:00 AM - 10:00 PM</span>
+              </div>
+              <div class="schedule-content-s-s">
+                <p class="schedule-days">Saturday - Sunday</p>
+                <span class="schedule-hours">08:00 AM - 16:00 PM</span>
+              </div>
+            </div>
+            <div class="contacts-content">
+              <a class="contact link" href="+61(0) 383 766 284"
+                >+61(0) 383 766 284</a
+              >
+              <a class="contact link" href="noreply@envato.com"
+                >noreply@envato.com</a
+              >
+            </div>
+          </div>
+        </li>
+      </ul>
+      <div class="button-container">
+        <div class="location-button-content">
+          <button map-data-modal-open type="button" class="our-location-button">
+            Our Locations<svg
+              width="0.5rem"
+              height="0.5rem"
+              class="button-icon"
+            >
+              <use href="./images/icon.svg#icon-Vector-1"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="location-button-content">
+          <button data-modal-open type="button" class="franchise-button">
+            Franchise<svg width="0.5rem" height="0.5rem" class="button-icon">
+              <use href="./images/icon.svg#icon-Vector-2"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modal Button Location -->
+    <div map-data-modal class="modal-js is-hidden">
+      <div class="modal-wind-location">
+        <button map-data-modal-close type="button" class="modal-btn">
+          <svg width="16" height="16" class="md-sv">
+            <use href="./images/icon.svg#icon-close-black-18dp-2-1"></use>
+          </svg>
+        </button>
+
+        <div>
+          <p class="modal-paragraf">We will be glad to see you</p>
+          <iframe
+            class="iframe-location"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2541.866344301846!2d30.52921278850294!3d50.4249617983273!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4d96f5139689b%3A0xa1f7c65300bebad1!2zR29JVDog0JrRg9GA0YHRiyDQv9GA0L7Qs9GA0LDQvNC80LjRgNC-0LLQsNC90LjRjyDQsiDQmtC40LXQstC1IHwgSVQg0JrRg9GA0YHRiw!5e0!3m2!1sen!2sro!4v1707984752312!5m2!1sen!2sro"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+
+          <p class="modal-paragraf-location">
+            Yevhen Konovalets Street, 36, Kyiv, 02000
+          </p>
+          <button type="submit" class="modal-button">
+            Open in Google Maps
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Button Franchise -->
+    <div data-modal class="modal-js is-hidden">
+      <div class="modal-wind">
+        <button data-modal-close type="button" class="modal-btn">
+          <svg width="16" height="16" class="md-sv">
+            <use href="./images/icon.svg#icon-close-black-18dp-2-1"></use>
+          </svg>
+        </button>
+
+        <form class="form-modal-form">
+          <p class="modal-paragraf">
+            Leave your details and maybe we will call you back
+          </p>
+          <div class="modal-container-first">
+            <label for="user-name" class="modal-form-label">Name</label>
+            <div class="modal-container-second">
+              <input
+                id="user-name"
+                name="user-name"
+                type="text"
+                class="modal-form-input"
+              />
+              <svg width="18" height="24" class="modal-icon">
+                <use href="./images/icons.svg#icon-VectorName" />
+              </svg>
+            </div>
+          </div>
+          <div class="modal-container-first">
+            <label for="user-name" class="modal-form-label">Number</label>
+            <div class="modal-container-second">
+              <input
+                id="user-phone"
+                name="user-name"
+                type="text"
+                class="modal-form-input"
+              />
+              <svg width="18" height="24" class="modal-icon">
+                <use href="./images/icons.svg#icon-VectorPhone" />
+              </svg>
+            </div>
+          </div>
+          <div class="modal-container-first">
+            <label for="user-name" class="modal-form-label">Email</label>
+            <div class="modal-container-second">
+              <input
+                id="user-mail"
+                name="user-name"
+                type="text"
+                class="modal-form-input"
+              />
+              <svg width="18" height="24" class="modal-icon">
+                <use href="./images/icons.svg#icon-VectorEmail" />
+              </svg>
+            </div>
+          </div>
+          <div class="modal-container-third">
+            <label for="user-comment" class="modal-form-label"
+              >a few words, my darling</label
+            >
+            <textarea
+              id="user-comment"
+              name="user-comment"
+              placeholder="Write Here.."
+              class="modal-textarea"
+            ></textarea>
+          </div>
+          <button type="submit" class="modal-button">Send</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-first-group">
+          <div class="group-first-content">
+            homemade ice cream
+            <span class="group-first-content-side">made</span>
+          </div>
+          <div class="group-second-content">with passion</div>
+        </div>
+        <div class="footer-second-group">
+          <div class="footer-social-media">
+            <ul class="social-media-container list">
+              <li class="social-media-content">
+                <a href="" class="footer-social-media-link">
+                  <svg width="20" height="20" class="social-media-icon">
+                    <use href="./images/icon.svg#icon-Vector-3" />
+                  </svg>
+                </a>
+              </li>
+              <li class="social-media-content">
+                <a href="" class="footer-social-media-link">
+                  <svg width="20" height="20" class="social-media-icon">
+                    <use href="./images/icon.svg#icon-Vector-4" />
+                  </svg>
+                </a>
+              </li>
+              <li class="social-media-content">
+                <a href="" class="footer-social-media-link">
+                  <svg width="20" height="20" class="social-media-icon">
+                    <use href="./images/icon.svg#icon-telegram" />
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-contacts-container">
+            <p class="footer-contacts-title">
+              Feel free to contact
+              <a class="footer-contacts" href="tel:+61 (0) 383 766 284"
+                >+61 (0) 383 766 284</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p class="copyright-content">© 2022 - IceCream. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <script src="./js/modal.js"></script>
+    <script src="./js/modal1.js"></script>
+  </body>
+</html>
